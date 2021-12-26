@@ -2,6 +2,7 @@ import React from 'react';
 import {
   View, StyleSheet, TextInput,
 } from 'react-native';
+// import { useEffect } from 'react/cjs/react.development';
 
 import CircleButton from '../components/CircleButton';
 import KeyboardSafeView from '../components/KeyboardSafeView';
