@@ -1,4 +1,5 @@
 import React from 'react';
+import { LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/stack';
 
@@ -17,6 +18,8 @@ const Stack = createStackNavigator();
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
 }
+
+LogBox.ignoreLogs(['Setting a timer']);
 
 export default function App() {
   return (
